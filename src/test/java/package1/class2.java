@@ -6,13 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class class2 {
+@Test(groups= {"smoke","regression"})
 
-
-		public static void main(String[] args) throws Throwable {
+		public  void m1() throws Throwable {
 			WebDriverManager.chromedriver().setup();
 			WebDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();

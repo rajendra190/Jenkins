@@ -6,12 +6,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Class1 {
-
-	public static void main(String[] args) throws Throwable {
+@Test(groups= {"smoke","regression"})
+	public void method() throws Throwable {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
