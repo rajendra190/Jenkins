@@ -1,5 +1,7 @@
 package package1;
 
+import java.util.Random;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +24,9 @@ public class Class1 {
 		driver.findElement(By.id("submitButton")).click();
 		driver.findElement(By.xpath("//a[.='Organizations']")).click();
 		driver.findElement(By.xpath("//img[@title='Create Organization...']")).click();
-		String orgname ="S6";
+		Random random =new Random();
+		int num=random.nextInt();
+		String orgname ="S9"+num;
 		driver.findElement(By.xpath("//input[@name='accountname']")).sendKeys(orgname);
 		WebElement industrydd =driver.findElement(By.xpath("//select[@name='industry']"));
 		Select select = new Select(industrydd);

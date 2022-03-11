@@ -23,7 +23,7 @@ public class class2 {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//span[.='Oppo']")).click();
 		 	List<WebElement> mobnames = driver.findElements(By.xpath("//span[@class='a-size-medium a-color-base a-text-normal']"));
-			for(int i=0;i<=mobnames.size();i++) {
+			for(int i=0;i<mobnames.size();i++) {
 				String category = mobnames.get(i).getText().toLowerCase();
 
 				System.out.println(category);
@@ -31,11 +31,13 @@ public class class2 {
 				if(category.contains("oppo")){
 					System.out.println("Tc Pass");
 				}
-				else
+				else {
 					System.out.println("Tc fail");
+				}
+			}
 				driver.close();
 
-			}
+			
 
 		}
 

@@ -60,7 +60,7 @@
 				<configuration>
 					<!-- TestNG Suite XML files list for test execution -->
 					<suiteXmlFiles>
-						<suiteXmlFile>testng_group.xml</suiteXmlFile>
+						<suiteXmlFile>testng_smoke.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
